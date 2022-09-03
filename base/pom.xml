@@ -51,6 +51,7 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
+      <version>1.18.24</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -79,10 +80,16 @@
         <source>1.8</source> <!-- depending on your project -->
         <target>1.8</target> <!-- depending on your project -->
         <annotationProcessorPaths>
+
           <path>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
             <version>1.4.2.Final</version>
+          </path>
+          <path>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
           </path>
           <!-- other annotation processors -->
         </annotationProcessorPaths>

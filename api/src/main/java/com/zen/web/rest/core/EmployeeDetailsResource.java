@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.logging.Logger;
+
 @RequiredArgsConstructor
 @Slf4j
 @RestController
@@ -19,12 +21,14 @@ public class EmployeeDetailsResource {
 
 //    @Autowired
 //    ECLReportService eclReportService;
-
+    @Autowired
+    Logger logger;
     @Autowired
     EmployeeService employeeService;
     @GetMapping("/employee")
     @ResponseBody
     public List<EmployeeDTO> getAllSimulationModels() {
+        logger.info("Employee find all method called");
         List<EmployeeDTO> empDto =  employeeService.findAll();
         return empDto;
     }
