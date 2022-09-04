@@ -1,4 +1,4 @@
-package com.sensei.encore.indus.domain.core;
+package com.zen.services.domain.core;
 
 import java.io.Serializable;
 
