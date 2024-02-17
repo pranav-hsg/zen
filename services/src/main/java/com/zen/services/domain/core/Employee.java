@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Builder
 @Entity
 @Table(name="employee_details")
-public class Employee extends com.sensei.encore.indus.domain.core.AbstractAuditingEntity {
+public class Employee extends AbstractAuditingEntity {
     @Id
     @GeneratedValue(strategy
             = GenerationType.IDENTITY)
