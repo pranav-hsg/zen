@@ -29,7 +29,7 @@ public class Employee extends com.sensei.encore.indus.domain.core.AbstractAuditi
     private String employeeName;
 
     @Column(name="employee_phone")
-    private Integer employeePhone;
+    private long employeePhone;
 
     @Column(name="employee_address")
     private String employeeAddress;

@@ -23,7 +23,7 @@ public class EmployeeDTO implements Serializable {
 
     private String employeeName;
 
-    private Integer employeePhone;
+    private long employeePhone;
 
     private String employeeAddress;
 }
