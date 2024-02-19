@@ -5,4 +5,4 @@
 `-------' `------' `--'  `--'
 
 ${application.title} ${application.version}
-Powered by Spring Boot ${spring-boot.version}
+Powered by Spring Boot ${spring-boot.version}, Running with username ${spring.data-source.username} and url ${spring.data-source.url} with port ${server.port}
